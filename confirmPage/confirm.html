@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation Page</title>
+    <style>
+       .top-bar {
+  width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.C-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.A-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+} 
+.text {
+  font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 65px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-flex;
+
+}
+.txt1 {
+  font-weight: 800;
+  color: black;
+}
+.edl {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+.div {
+    margin-top: 50px;
+    text-align: center;
+}
+.pic {
+    width: 30%;
+}
+
+.h1{
+    margin-top: -50px;
+    font-size: 40px;
+}
+.h4{
+    font-size: 20px;
+    font-weight: lighter;
+}
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <span class = "text">
+          <div class="txt1">SHOP</div>
+           <div class="txt2">lane</div>
+           <div class="C-txt">CLOTHING</div>
+        <div class="A-txt">ACCESSORIES</div>
+        </span>
+        </div>
+
+        <div class="div">
+        <img class="pic" src="tick.avif">
+        <h1 class="h1">Order Placed Successfully!!</h1>
+        <h4 class="h4">We have sent you an email with the order details</h4>
+        </div>
+     <img class="edl" alt="logo" src = "edLogo.png">
+    <script src="confirm.js"></script>
+</body>
+</html>

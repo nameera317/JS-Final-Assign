@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src ="jquery-3.6.3.min.js"></script>
+  <title>Home page</title>
+  <style>
+   .img {
+    width: 244.5px;
+    height: 270px;
+
+   }
+   .card {
+    border: 1px solid black;
+    display: block;
+    width: 16%;
+    min-width: 200px;
+    height: 410px;
+    margin: 30px 10px;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0 2px 10px rgb(0 0 0 / 30%);
+    border: none;
+
+
+   }
+   .card:hover {
+    box-shadow: 0 2px 10px #3A3B3C ;
+   }
+    #clothing-section {
+      display: inline-flex;
+      margin-left: 40px;
+
+    }
+    #accessories-section{
+      display: inline-flex;
+      margin-left: 40px;
+    }
+    .h3 {
+      
+      text-align: left;
+      font-size: 17px;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+      font-weight: lighter;
+      margin-top: 10px;
+      margin-left: 10px;
+      font-family: "Montserrat", sans-serif;
+      color: rgb(27, 25, 25);
+    }
+    .h5 {
+      margin-top: 5px;
+      text-align: left;
+      font-size: 13px;
+      font-weight: 600;
+      color: rgb(110, 110, 110);
+      font-family: "Montserrat", sans-serif;
+      margin: 10px;
+
+    }
+     .price {
+      margin-top: 10px;
+      text-align: left;
+      font-size: 18px;
+      letter-spacing: 2px;
+      color: #009688;
+      margin: 10px;
+      font-family: "Montserrat", sans-serif;
+     }
+     .slideshow-container {
+  max-width: 1300px;
+  margin: auto;
+  margin-top: 20px;
+
+}  
+.slideImg{
+  margin-top: 90px;
+  width: 25px;
+}
+  .mySlides {
+  display: none;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.logo-img {
+  width: 110px;
+  margin-left: 20px;
+}
+.text {
+  font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 65px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-flex;
+
+}
+.txt1 {
+  font-weight: 800;
+  color: black;
+}
+.cart-logo {
+  width: 50px;
+  position: absolute;
+  right: 90px;
+  top: 20px;
+}
+.a {
+  text-decoration: none;
+}
+.top-bar {
+  width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.C-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.A-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.edl {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <span class = "text">
+      <div class="txt1">SHOP</div>
+       <div class="txt2">lane</div>
+       <div class="C-txt">CLOTHING</div>
+    <div class="A-txt">ACCESSORIES</div>
+    </span>
+    
+    </div>
+  
+  <div class="slideshow-container">
+  <div class="mySlides fade">
+    <img class="slideImg" src="img1.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="slideImg" src="img2.png" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img class="slideImg" src="img3.png" style="width:100%">
+  </div>
+ 
+  <div class="mySlides fade">
+    <img class="slideImg" src="img4.png" style="width:100%">
+  </div>
+
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(2)"></span>
+    <span class="dot" onclick="currentSlide(3)"></span>
+    <span class="dot" onclick="currentSlide(4)"></span>
+  </div>  </div> 
+
+  <div id = div-class>
+    <h1>Clothing for Men and Women</h1> 
+    <div id="clothing-section">
+      
+      </div>
+      <h1>Accessories for Men and Women</h1>
+    <div id="accessories-section">
+    </div>
+  </div>
+
+  <img class="edl" alt="logo" src = "edLogo.png">
+  <script src ="home.js"></script>
+</body>
+</html>

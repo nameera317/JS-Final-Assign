@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout Page</title>
+    <style>
+.text {
+  font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 65px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-flex;
+
+}
+.txt1 {
+  font-weight: 800;
+  color: black;
+}
+#cart-logo {
+  width: 50px;
+  position: absolute;
+  right: 90px;
+  top: 20px;
+}
+
+.top-bar {
+  width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.C-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.A-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#h1 {
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: lighter;
+  font-size: 30px;
+  margin-left: 5px;
+}
+.rh1{
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 0px;
+  
+}
+#cont{
+ margin-top: 130px;
+ margin-left: 115px;
+ display: inline-flex;
+ width: 90%;
+}
+.rCard {
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    padding: 16px;
+    width: 90%;
+    height: fit-content;
+}
+.btn {
+  background-color: #009688;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    padding: 18px 36px;
+    border-radius: 6px;
+    margin-top: 36px;
+    font-weight: 600;
+    color: white;
+}
+.contH1{
+  font-size: 40px;
+  font-weight: lighter;
+  font-family: 'Open Sans', sans-serif;
+}
+#leftCont {
+  width: 40%;
+  
+}
+
+#rightCont {
+  width: 60%;
+  margin-left: 100px;
+  margin-top: 155px;
+  display: block;
+}
+.card {
+  display:flex;
+    box-sizing: border-box;
+    box-shadow: 0 2px 5px #ccc;
+    border-radius: 5px;
+    background-color: white;
+    max-width: 600px;
+    padding: 16px;
+    margin-bottom: 15px;
+}
+.img {
+  width: 80px;
+    min-width: 80px;
+    border-radius: 5px;
+    margin-right: 16px;
+}
+.h4 {
+  font-weight: 600;
+    margin: 0;
+    margin-bottom: 4px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.total {
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  margin-top: 20px;
+}
+.size{
+  font-family: 'Open Sans', sans-serif;
+}
+.price {
+  font-family: 'Open Sans', sans-serif;
+}
+.body {
+  font-family: 'Open Sans', sans-serif;
+}
+.edl {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+    </style>
+</head>
+<body id ="body">
+    <div class="top-bar">
+        <span class = "text">
+          <div class="txt1">SHOP</div>
+           <div class="txt2">lane</div>
+           <div class="C-txt">CLOTHING</div>
+        <div class="A-txt">ACCESSORIES</div>
+        </span>
+        </div>
+          <div id="cont">
+            
+        <div id="leftCont">
+          <h1 class = "contH1">Checkout</h1>
+          <h1 id="h1">Total Items:
+            <span id ='totalCount'></span>
+          </h1>
+        </div>
+        <div id="rightCont"></div>
+        </div>
+        <img class="edl" alt="logo" src = "edLogo.png">
+    <script src="checkout.js"></script>
+</body>
+</html>

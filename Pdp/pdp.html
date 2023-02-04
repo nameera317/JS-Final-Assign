@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="jquery-3.6.3.min.js"></script>
+    <title>Product details page</title>
+    <style>
+   .container {
+    display:inline-flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;    
+ }
+.preview-container{
+ width: 70%;   
+ margin-top: 20px;
+  }  
+.details-container{
+ width: 100%;
+ padding-left: 30px;
+ margin-top: 20px;
+   }
+.preview-image {
+ width: 100%;
+ margin-top: 30px;
+ padding: 0;
+ font-family: "Montserrat",sans-serif;
+  }
+.product-img{
+ margin: 5px;
+ width: 15%;
+ height: 20%;
+ cursor: pointer;
+ padding: 4px;
+ border-radius: 6px;
+    }
+ .product-name {
+  font-weight: 300;
+  font-size: 46px;
+  letter-spacing: -1px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 20px;
+    }       
+.product-brand {
+ font-weight: 200;
+ font-size: 21px;
+ letter-spacing: 1px;
+ margin-top: 15px;
+ line-height: 2px;
+ font-family: "Montserrat", sans-serif;
+ color: rgb(27, 25, 25);
+     }
+.priceClass {
+ margin-top: 8px;
+ font-weight: 200;
+ display: inline-flex;
+ font-size: 20px;
+ letter-spacing: 1px;
+ color: rgb(27, 25, 25);
+ font-family: "Montserrat", sans-serif;
+   }
+.priceTextClass {
+ margin-top: 0px;
+ font-size: 22px;
+ margin-left : 7px;
+ color: #009688;
+ font-weight: bold;
+ font-family: "Montserrat", sans-serif;
+     }
+.desc-class {
+ font-size: 20px;
+ margin-top: -36px;
+ font-weight: 200;
+ letter-spacing: 1px;
+ color: rgb(27, 25, 25);
+ font-family: "Montserrat", sans-serif;
+   }
+.desc-text-class {
+ margin-top: -3px;
+ font-size: 17.5px;
+ font-weight: 300;
+ color: #86939e;
+ font-family: "Montserrat", sans-serif;
+  }
+.product-preview {
+ margin-top: 27px;
+ font-weight: 200;
+ font-size: 20px;
+ line-height: 15px;
+ letter-spacing: 1px;
+ color: rgb(27, 25, 25);
+ font-family: "Montserrat", sans-serif;
+   }
+.active {
+border: 2px solid #009688;
+border-radius: 10px;
+   }
+.button {
+ font-size: 16.5px;
+ font-weight: bold;
+ margin-top: 20px;
+ color: #fff;
+ padding: 10px 20px;
+ text-align: center;
+ border: none;
+ letter-spacing: 2px;
+ background-color: #009688;
+ border-radius: 4px;
+ cursor: pointer;
+ box-shadow: 0 2px 10px rgb(0 0 0 / 50%);
+ font-family: "Montserrat", sans-serif; 
+ 
+   }
+.button:hover {
+ box-shadow: 0 2px 10px #3A3B3C;
+           }
+           .logo-img {
+  width: 110px;
+  margin-left: 20px;
+}
+.text {
+  font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-left: 65px;
+    font-family: 'Open Sans', sans-serif;
+    display: inline-flex;
+
+}
+.txt1 {
+  font-weight: 800;
+  color: black;
+}
+#cart-logo {
+  width: 50px;
+  position: absolute;
+  right: 90px;
+  top: 20px;
+}
+#count{
+  position: absolute;
+  right: 94px;
+  color: #fff; 
+  background-color: #009688;
+  border-radius: 50%;
+  text-align: center;
+  top: 14px;
+  width: 18px;
+  height: 18px;
+}
+.top-bar {
+  width: 100%;
+    box-shadow: 0 2px 5px #ccc;
+    background-color: white;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+.C-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.A-txt {
+  text-decoration: none;
+    color: black;
+    margin-left: 32px;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    font-size: 18px;
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+  margin-top: 50px;
+}
+
+.edl {
+    width: 128px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+    </style>
+</head>
+<body>
+  <div class="top-bar">
+    <span class = "text">
+      <div class="txt1">SHOP</div>
+       <div class="txt2">lane</div>
+       <div class="C-txt">CLOTHING</div>
+    <div class="A-txt">ACCESSORIES</div>
+    </span>
+    <div id ="parent-count">
+      <a href="/Checkout page/checkout.html">
+    <img id="cart-logo" src="images.png">
+    </a>
+    <div id="count">0</div>
+  </div>
+ 
+ 
+  </div>
+  <img class="edl" alt="logo" src = "edLogo.png">
+    <script src="pdp.js"></script>
+</body>
+</html>
